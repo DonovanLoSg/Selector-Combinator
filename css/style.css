@@ -1,0 +1,80 @@
+body {
+    margin: 20px;
+    padding-bottom: 50px;
+
+}
+
+#title {
+    color: black
+}
+
+h1 {
+    color: darkred;
+}
+
+#howto {
+    border: 1px solid darkred;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.shadowed-box {
+    display: block;
+    border: 1px solid gray;
+    box-shadow: 3px 3px 10px 2px;
+    font-size: 12px;
+}
+
+#targetted-box {
+    display: block;
+    padding: 20px 20px;
+    margin: 0;
+    border: 0;
+}
+
+#targetted-box div {
+    display: inline;
+    height: 20px;
+    line-height: 14px;
+
+    
+}
+
+#targetted-box p {
+    margin: 0;
+}
+
+#targetted-box li {
+    list-style-type: none;
+    margin-left: 30px;
+    line-height: 14px;
+}
+
+#targetted-box ul {
+    margin: 0 0 0 30px;
+    padding-left: 0;
+    line-height: 14px;
+}
+
+#targetted-box .tab10 {
+    margin-left: 30px;
+    line-height: 14px;
+}
+
+#targetted-box .tab20 {
+    margin-left: 60px;
+    line-height: 14px;
+}
+
+#targetted-box .tab30 {
+    margin-left: 90px;
+    line-height: 14px;
+}
+
+button {
+    width: 300px
+}
+
+.buttons {
+    font-size: 12px;
+}

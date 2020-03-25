@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+		integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+	<link href="css/style.css" rel="stylesheet">
+    <style>
+        #targetted-box {
+            color: black;
+            font-weight: normal;
+        }
+    </style>
+    <script type="text/javascript" src="scripts/script.js"></script>  
+	<title>Understanding Combinator</title>
+</head>
+
+<body>
+
+	<img src="http://www.donovanlo.sg/images/donovanlogo150x131.png" alt="by Donovan" class="float-left m-4"><br>
+	<h1 id="title">Understanding Combinator</h1>
+
+	<div id="howto">
+		<p> I got familiar with the different combinator while creating this page. Hope it helps you to understand them easier too.<br><br></p>
+	</div>
+
+ 
+    <div class="shadowed-box">
+        <span id="targetted-box">
+<div>&lt;div&gt;<br>
+<div class="tab10">&lt;div&gt;
+<p class="tab20">&lt;p&gt; a paragraph. &lt;/p&gt;</p>
+<span class="tab10">&lt;/div&gt;</span>
+<br><div class="tab10">&lt;div&gt;<p class="tab20">&lt;p&gt; and another paragraph &lt;/p&gt;</p>
+<span class="tab10">&lt;/div&gt;</div>
+<p class="tab10">&lt;p&gt; a paragraph. &lt;/p&gt;</p>
+<p class="tab10">&lt;p&gt; a paragraph. &lt;/p&gt;</p>
+<div class="tab10">&lt;div&gt;
+<ul class="tab20">&lt;ul&gt;
+<li>&lt;li&gt;list item one&lt;/li&gt;</li>
+<li>&lt;li&gt;list item two&lt;/li&gt;</li>
+<li class="tab10">&lt;li&gt;
+<p class="tab10">&lt;p&gt; a paragraph in a  list &lt;/p&gt;</p>
+<p class="tab10">&lt;p&gt; a paragraph in a  list &lt;/p&gt;</p>
+&lt;/li&gt;</li>
+&lt;/ul&gt;</ul>
+<p class="tab20">&lt;p&gt; a paragraph. &lt;/p&gt;</p>
+<span class="tab10">&lt;/div&gt;</div><br>
+&lt;/div&gt;</div>
+</div>
+    </span>
+</div>
+
+<br>
+<div class="buttons">
+<p label="combinator selector">Select a combination:</p>
+<div><button onclick="changeCSS('div p')">div p {font-weight: bold; color: red}</button> Descendant selector (space)</div>
+<div>Descendant selector: This selector is used to select all the child elements of the specified tag. The tags can be the direct child of the specified tag or can be very deep in the specified tag. This combinator combines the two selectors such that selected elements have an ancestor same as the first selector element.</div>
+<div><button onclick="changeCSS('div>p')">div&gt;p {font-weight: bold; color: red}</button> Child selector (>)</div>
+<div>Child Selector: This selector is used to select the element that is the immediate child of the specified tag. This combinator is stricter than the descendant selector because it selects only the second selector if it has the first selector element as its parent.</div>
+<div><button onclick="changeCSS('div+p')">div+p {font-weight: bold; color: red}</button> Adjecant Sibling selector (+)</div>
+<div>Adjacent Sibling selector: The Adjacent sibling selector is used to select the element that is adjacent or the element that is the next to the specified selector tag. This combinator selects only one tag that is just next to the specified tag.</div>
+<div><button onclick="changeCSS('div~p')">div~p {font-weight: bold; color: red}</button> General Sibling selector (~)</div>
+<div>General Sibling selector: The general sibling selector is used to select the element that follows the first selector element and also share the same parent as the first selector element. This can be used to select a group of elements that share the same parent element.</div>
+<div><button onclick="resetCSS()">Reset</button></div>
+</div>
+
+
+
+
+
+
+    			
+
+
+					
+
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
