@@ -4,6 +4,8 @@ function resetCSS(){
     for (i = 0; i < selectedSelector.length; ++i) {
         selectedSelector[i].style.color = "black";
         selectedSelector[i].style.fontWeight = "normal";}
+
+
 }
 
 
@@ -14,6 +16,8 @@ function changeCSS(item){
     for (i = 0; i < selectedSelector.length; ++i) {
         selectedSelector[i].style.color = "red";
         selectedSelector[i].style.fontWeight = "bold";}
+
+    
 }
 
 

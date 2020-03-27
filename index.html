@@ -29,7 +29,9 @@
 		<p> I got familiar with the different combinator while creating this page. Hope it helps you to understand them easier too.<br><br></p>
 	</div>
 
- 
+ <div class="container">
+ <div class="row">
+ <div class="col">
     <div class="shadowed-box">
         <span id="targetted-box">
 <div>&lt;div&gt;<br>
@@ -56,22 +58,27 @@
     </span>
 </div>
 
-<br>
-<div class="buttons">
-<p label="combinator selector">Select a combination:</p>
-<div><button onclick="changeCSS('div p')">div p {font-weight: bold; color: red}</button> Descendant selector (space)</div>
-<div>Descendant selector: This selector is used to select all the child elements of the specified tag. The tags can be the direct child of the specified tag or can be very deep in the specified tag. This combinator combines the two selectors such that selected elements have an ancestor same as the first selector element.</div>
-<div><button onclick="changeCSS('div>p')">div&gt;p {font-weight: bold; color: red}</button> Child selector (>)</div>
-<div>Child Selector: This selector is used to select the element that is the immediate child of the specified tag. This combinator is stricter than the descendant selector because it selects only the second selector if it has the first selector element as its parent.</div>
-<div><button onclick="changeCSS('div+p')">div+p {font-weight: bold; color: red}</button> Adjecant Sibling selector (+)</div>
-<div>Adjacent Sibling selector: The Adjacent sibling selector is used to select the element that is adjacent or the element that is the next to the specified selector tag. This combinator selects only one tag that is just next to the specified tag.</div>
-<div><button onclick="changeCSS('div~p')">div~p {font-weight: bold; color: red}</button> General Sibling selector (~)</div>
-<div>General Sibling selector: The general sibling selector is used to select the element that follows the first selector element and also share the same parent as the first selector element. This can be used to select a group of elements that share the same parent element.</div>
-<div><button onclick="resetCSS()">Reset</button></div>
+ </div>
+ <div class="col">
+
+
+<div class="buttons container">
+<div class="row"><p label="combinator selector">Select a combination:</p></div>
+<div class="col"><button onclick="changeCSS('div p')">div p {font-weight: bold; color: red}</button></div>
+<div class="col"><b>Descendant selector (space)</b> is used to select all the child elements of the specified tag. The tags can be the direct child of the specified tag or can be very deep in the specified tag, as long as they have an ancestor same as the first selector element. </div>
+<div class="col"><button onclick="changeCSS('div>p')">div&gt;p {font-weight: bold; color: red}</button></div>
+<div class="col"><b>Child selector (>)</b> is used to select the element that is the immediate child of the specified tag. This combinator is stricter than the descendant selector because it selects only the second selector if it has the first selector element as its parent.</div>
+<div class="col"><button onclick="changeCSS('div+p')">div+p {font-weight: bold; color: red}</button></div>
+<div class="col"><b>Adjecant Sibling selector (+)</b> is used to select the element that is adjacent or the element that is the next to the specified selector tag. This combinator selects only one tag that is just next to the specified tag.</div>
+<div class="col"><button onclick="changeCSS('div~p')">div~p {font-weight: bold; color: red}</button></div>
+<div class="col"><b>General Sibling selector (~)</b> is used to select the element that follows the first selector element and also share the same parent as the first selector element. This can be used to select a group of elements that share the same parent element.</div>
+<div class="col"><button onclick="resetCSS()">Reset</button></div>
 </div>
 
 
-
+</div>
+</div>
+</div>
 
 
 
